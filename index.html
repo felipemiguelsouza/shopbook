@@ -1,76 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopBook</title>
+    <title>18 Artimanhas de Satanás – Fábio Oliveira da Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="gradient.js" defer></script>
     <script type="text/javascript">
-	function importHotmart(){ 
- 		var imported = document.createElement('script'); 
- 		imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
- 		document.head.appendChild(imported); 
-		var link = document.createElement('link'); 
-		link.rel = 'stylesheet'; 
-		link.type = 'text/css'; 
-		link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-		document.head.appendChild(link);	} 
- 	importHotmart(); 
- </script> 
- 
-    <!--Qualquer Alteração Realizar Git Push-->
+        function importHotmart() {
+            var imported = document.createElement('script');
+            imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+            document.head.appendChild(imported);
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+            document.head.appendChild(link);
+        }
+        importHotmart();
+    </script>
 </head>
-
 <body>
 
+    <canvas id="gradient-canvas"></canvas>
+
+    <div class="particles" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
     <header>
-        <h2>Fábio Oliveira da Silva</h2>
+        <div class="header-inner">
+            <span class="header-author">Fábio Oliveira da Silva</span>
+            <span class="header-badge">Autor</span>
+        </div>
     </header>
 
     <main>
 
         <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
 
-            <img src="capa.jpg" alt="Capa do livro" class="capa">
+            <div class="book-wrap">
+                <img src="capa.jpg" alt="Capa do livro 18 Artimanhas de Satanás e o Conselho de Deus" class="capa">
+                <div class="book-shadow" aria-hidden="true"></div>
+            </div>
 
-            <h1>18 Artimanhas de Satanás e o Conselho de Deus</h1>
+            <div class="hero-content">
+                <p class="eyebrow">Novo lançamento</p>
+                <h1>18 Artimanhas<br><em>de Satanás</em><br>e o Conselho de Deus</h1>
+                <div class="divider-ornament" aria-hidden="true">
+                    <span></span><svg viewBox="0 0 12 12" width="10" height="10"><circle cx="6" cy="6" r="3" fill="currentColor" opacity=".5"/></svg><span></span>
+                </div>
+                <p class="hero-desc">
+                    Descubra as estratégias espirituais que afastam o homem de Deus
+                    e aprenda como vencê-las com sabedoria e fé.
+                </p>
 
-            <p>
-                Descubra as estratégias espirituais que afastam o homem de Deus e aprenda como vencê-las com sabedoria e
-                fé.
-            </p>
+                <a onclick="return false;" href="https://pay.hotmart.com/Q104991610F?checkoutMode=2"
+                   class="hotmart-fb hotmart__button-checkout btn-comprar">
+                    <span class="btn-label">Adquirir o livro</span>
+                    <svg class="btn-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
 
-            <a onclick="return false;" href="https://pay.hotmart.com/Q104991610F?checkoutMode=2"
-                class="hotmart-fb hotmart__button-checkout btn">
-                Comprar Agora
-            </a>
-
-            <p class="info">📥 Acesso imediato após a compra</p>
+                <p class="info-badge">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" width="13" height="13">
+                        <path d="M8 2v5l3 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4"/>
+                    </svg>
+                    Acesso imediato após a compra
+                </p>
+            </div>
         </section>
 
-        <section class="descricao">
+        <section class="card-section reveal">
+            <div class="section-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                    <path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </div>
             <h2>Sobre o livro</h2>
-
+            <div class="card-rule" aria-hidden="true"></div>
             <p>
                 Você já se perguntou por que enfrenta tantas dificuldades espirituais?
-                Descubra as estratégias que podem estar te afastando de Deus e aprenda como vencê-las com fé, sabedoria
-                e entendimento.
+                Descubra as estratégias que podem estar te afastando de Deus e aprenda como
+                vencê-las com <strong>fé, sabedoria e entendimento</strong>.
             </p>
-
         </section>
 
-        <section class="autor">
+        <section class="card-section reveal">
+            <div class="section-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                    <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
             <h2>Sobre o autor</h2>
-
+            <div class="card-rule" aria-hidden="true"></div>
             <p>
-                Fábio Oliveira da Silva é autor dedicado ao estudo espiritual, trazendo ensinamentos que ajudam pessoas
-                a compreender melhor sua caminhada de fé e suas decisões no dia a dia.
+                Fábio Oliveira da Silva é autor dedicado ao estudo espiritual, trazendo
+                ensinamentos que ajudam pessoas a compreender melhor sua caminhada de fé
+                e suas decisões no dia a dia.
             </p>
         </section>
 
     </main>
 
-</body>
+    <footer>
+        <p>© <span id="year"></span> Fábio Oliveira da Silva · Todos os direitos reservados</p>
+    </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+
+</body>
 </html>
